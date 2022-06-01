@@ -1,2 +1,11 @@
-# Buy-on-Intraday-Market-or-not-A-Deep-Learning-Approach
-Buy on Intraday Market or not: A Deep Learning Approach
+# Buy on Intraday Market or not: A Deep Learning Approach
+
+## Abstract
+As the share of variable renewable energy sources increases, so does the need for near-delivery offloading of surplus electricity. The availability of potentially cheap energy sources in intraday markets begs warrants the reconsideration of a potentially overlooked market. From a power buying perspective, this thesis has applied promising deep neural network techniques to produce accurate electricity price forecasts before day-ahead market closure. Architectures tested in this thesis include \textit{long short-term memory (LSTM)}, \textit{gated recurrent units (GRU)}, \textit{deep autoregressive models (DeepAR)} and \textit{temporal fusion transformers (TFT)}. Using \textit{nested cross-validation scheme}, we seek to better approximate the generalization error of our models. LSTM and GRU models are found to be the best performing, in day-ahead and intraday markets, beating the benchmark measured in MAE by 30.6 \% and 29 \%, respectively. The increase in performance achieved by deep neural architectures are found to be particularly prominent in periods of high price volatility. 
+
+Our overall goal has been the creation of decision tool, to be used by an electricity buyer to determine optimal electricity market for a given set of delivery hours. The results presented in this thesis are based on the NO2 power region (South Norway) as a result of its relative intraday liquidity. We implement the decision tool by means of a a probabilistic classifier trained specifically on the forecasts of the optimal deep neural architectures. We find that the use of a probabilistic classifier increase classification performance when compared to using sign-difference of the forecasts directly.
+
+Despite numerous potential error sources,  our decision tool is shown to increase expected marginal profits when compared to a day-ahead-only trading strategy by testing in a out-of-sample simulated \enquote{production} environment. We model a decision tool to fit the needs of various risk profiles, and find that higher risk warrants higher profits. Though beyond the scope of this thesis, the general outline of this decision tool can be modified and extended to fit the needs of power producers. 
+
+### Keywords
+Deep Neural Networks, Long Short-Term Memory (LSTM), Gated Recurrent Unit (GRU), Temporal Fusion Transformer (TFT), Autoregressive Recurrent Networks (DeepAR), Probalistic classification, Energy Quantified,  Nord Pool, NO2 (South Norway), Intraday market, Elbas, Day-ahead market, Elspot, Regulating market, Electricity price forecasting, Nested Cross-Validation
